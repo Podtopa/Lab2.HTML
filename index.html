@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Basics</title>
+</head>
+
+<body>
+    <div>
+        <h1 align="center"><b>Лабораторна робота №2. Мова гіпертекстової розмітки HTML. Структура HTML документа. Теги для
+            роботи з текстом. Теги для створення таблиць, малюнків та гіперпосилань.</b></h1>
+        <hr>
+        <div align="center">
+        <nav>
+            <a href="#first"><strong>Марковані списки</strong></a>
+            <a href="#second"><strong>Нумерований список</strong></a>
+            <a href="#third"><strong>Списки визначень</strong></a>
+            <a href="#fourth"><strong>Таблиця</strong></a>
+            <a href="#fifth"><strong>Форма</strong></a>
+            <a href="#six"><strong>Корисні посилання</strong></a>
+        </nav>
+        </div>
+        <hr>
+    </div>
+    <div id="first">
+        <h2>Марковані списки</h2>
+        <p><em><b>Особливості таблиць:</b></em></p>
+        <ul>
+            <li>розміри таблиці спочатку не встановлені і обчислюються на основі вмісту комірок;</li>
+            <li>максимальна ширина таблиці - це, як правило, весь доступний простір за шириною;</li>
+            <li>вміст комірок за змовчуванням вирівнюється по центру вертикалі</li>
+        </ul>
+
+        <p><em><b>Гіперпосилання використовують у трьох випадках:</b></em></p>
+        <ul>
+            <li>гіперпосилання з якорем для навігації в межах однієї сторінки;</li>
+            <li>відносні адреси, як правило, для навігації в межах одного сайту;</li>
+            <li>абсолютні адреси, як правило, для переходу на інший сайт;</li>
+        </ul>
+    </div>
+    <div id="second">
+        <h2>Нумерований список</h2>
+        <p><em><b>Структура таблиці в HTML:</b></em></p>
+        <ol>
+            <li>відкрити тег <strong>table</strong>;</li>
+            <li>додати рядки за допомогою тега <strong>tr</strong>;</li>
+            <li>додати звичайні комірки за допомогою тега <strong>td</strong>, або комірки заголовків через <strong>th</strong>;</li>
+            <li>закрити тег <strong>table</strong>.</li>
+        </ol>
+    </div>
+    <div id="third">
+        <h2>Списки визначень</h2>
+        <dl>
+            <dt><b><mark>HTML</mark></b></dt>
+            <dd> стандартна мова розмітки документів у WWW; система
+                верстки, яка визначає, як і які елементи повинні розміщатися на
+                веб-сторінці.</dd>
+            <dt><b><mark>Тег</mark></b></dt>
+            <dd> це елемент мови розмітки гіпертексту, в основному для
+                задання того, як буде відображатися текст (сторінка).</dd>
+        </dl>
+    </div>
+    <div id="fourth">
+        <h2>Таблиця</h2>
+        <table border="1">
+            <caption>Теги HTML</caption>
+            <tr>
+                <th>Тег</th>
+                <th>Опис</th>
+                <th>Чи підтримується в HTML5?</th>
+            </tr>
+            <tr>
+                <td>article</td>
+                <td>Визначає незалежний, самодостатній зміст від іншої частини сайту.</td>
+                <td rowspan="3">так</td>
+            </tr>
+            <tr>
+                <td>asidе</td>
+                <td>Блок з додатковою інформацією.</td>
+            </tr>
+            <tr>
+                <td>datalis</td>
+                <td>Створює список варіантів.</td>
+            </tr>
+            <tr>
+                <td>hgroup</td>
+                <td>Призначається для групування заголовків на веб-сторінці.</td>
+                <td>ні</td>
+            </tr>
+            <tr>
+                <td>input</td>
+                <td>Поле вводу даних.</td>
+                <td>так</td>
+            </tr>
+            <tr>
+                <td>object</td>
+                <td>Визначає вбудований об'єкт.</td>
+                <td>ні</td>
+            </tr>
+        </table>
+    </div>
+    <div id="fifth">
+        <h2>Форма</h2>
+        <form>
+            <div>First name:<input type="text"></div>
+            <div>Surname:<input type="text"></div>
+            <div>Email:<input type="text"></div>
+            <div>Country:
+            <select>
+                <option>Ukraine</option>
+                <option>USA</option>
+                <option>Japan</option>
+                <option>Roman</option>
+                <option>Poland</option>
+            </select></div>
+            <textarea cols="30" rows="10"></textarea>
+            <br>
+            <button>Submit</button>
+        </form>
+    </div>
+    <div id="six">
+        <h2>Корисні посилання</h2>
+        <table>
+            <tr>
+                <td><img src="html.jpg" alt="html" height="50 width="100"></td>
+                <td><a href="https://css.in.ua/html/tags">HTML</a></td>
+            </tr>
+            <tr>
+                <td><img src="css.png" alt="css" height="50" width="75" ></td>
+                <td><a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/CSS_basics">CSS</a></td>
+            </tr>
+            <tr>
+                <td><img src="js.png" alt="js" height="30" width="30"></td>
+                <td><a href="https://learn.javascript.ru/">JS</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<hr>
+<footer>
+   <p align="center"> © Anastasiia Podtopa</p>
+</footer>
+</html>
